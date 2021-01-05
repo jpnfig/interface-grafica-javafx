@@ -5,6 +5,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 import gui.util.Alerts;
+import gui.util.Constraints;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert.AlertType;
@@ -38,9 +39,11 @@ public class ViewController implements Initializable {
 	}
 
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
-		
+	public void initialize(URL url, ResourceBundle rb) {
+		Constraints.setTextFieldDouble(txtNumber1);
+		Constraints.setTextFieldDouble(txtNumber2);
+		Constraints.setTextFieldMaxLength(txtNumber1, 12);
+		Constraints.setTextFieldMaxLength(txtNumber2, 12);
 	}
 
 }
