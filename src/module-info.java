@@ -1,4 +1,4 @@
-module javafx1 {
+module javafx2 {
 	requires javafx.fxml;
 	requires javafx.graphics;
 	requires javafx.controls;
