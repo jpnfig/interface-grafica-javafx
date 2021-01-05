@@ -3,8 +3,10 @@ package gui;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 
 public class ViewController implements Initializable {
@@ -14,7 +16,7 @@ public class ViewController implements Initializable {
 	
 	@FXML
 	public void onBtTestAction() {
-		System.out.println("Click!");
+		Alerts.showAlert("Alert title", "Alert header", "Hello", AlertType.INFORMATION);
 	}
 
 	@Override
